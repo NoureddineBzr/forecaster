@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Forcast for {{city}}, {{countryCode}}</h1>
+    {% for forcast  in forcasts %}
+      <h2>{{forcast.date | date('Y-m-d')}}</h2>
+
+      <dl>
+        <dt>Temperature</dt>
+        <dd>{{ forcast.temperatureCelsius}}</dd>
+        <dt>hunsity</dt>
+        <dd>{{ forcast.humidity}}</dd>
+      </dl>
+
+    {% endfor %}
+{% endblock %}
