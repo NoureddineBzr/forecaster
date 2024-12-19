@@ -9,7 +9,14 @@
         <dd>{{ forcast.temperatureCelsius}}</dd>
         <dt>hunsity</dt>
         <dd>{{ forcast.humidity}}</dd>
+        <dt>cloudiness</dt>
+        <dd>{{ forcast.cloudiness}}</dd>
+        <dt>pressure</dt>
+        <dd>{{forcast.pressure | upper}}</dd>
+        <dt>icon</dt>
+        <dd>{{forcast.icon | upper}}</dd>
+
       </dl>
 
     {% endfor %}
-{% endblock %}
+{% endblock %}  
